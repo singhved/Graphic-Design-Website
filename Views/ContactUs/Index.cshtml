@@ -1,0 +1,135 @@
+﻿<div class="untree_co-hero overlay">
+    <div class="container">
+        <div class="hero-inner text-center d-flex align-items-center justify-content-center">
+            <div class="text text-center w-75">
+                <div class="w-100 mx-auto">
+                    <h1 data-aos="fade-up" data-aos-delay="100" class="mb-4">Contact <strong>us</strong></h1>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">
+                        Separated they live in.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    </p>
+                    <p><a href="/Portfolio/Index" class="btn btn-primary">See portfolio</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlap-white-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 mx-auto contents py-5 pl-3 pl-lg-0 mb-0">
+                <div class="bg"></div>
+                <div class="row">
+                    <div class="col-lg-4 mt-2">
+                        <h3 class="sub-title border-bot text-black">Get in touch</h3>
+                    </div>
+                    <div class="col-lg-8 pr-5">
+                        <h2 class="section-title text-black my-0 py-0 mb-3">Far far away, behind the word mountains, far from the countries</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="untree_co-section untree_co-section-4 padding-md">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 mx-auto contents ">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="" for="fname">First name</label>
+                                        <input type="text" class="form-control" id="fname">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="" for="lname">Last name</label>
+                                        <input type="text" class="form-control" id="lname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="" for="email">Email address</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label class="" for="message">Message</label>
+                                <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+                            </div>
+                            <button type="button"  onclick="Message()" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="untree_co-section untree_co-section-5 pb-5">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-7 mb-5">
+                <h2 class="section-heading text-white">Testimonials</h2>
+                <p class="text-white">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-v2 light">
+                    <img src="../../assets/images/person_1.jpg" alt="Image" class="img-fluid">
+                    <blockquote>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
+                    <cite>
+                        James Anderson
+                    </cite>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-v2 light">
+                    <img src="../../assets/images/person_2.jpg" alt="Image" class="img-fluid">
+                    <blockquote>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
+                    <cite>
+                        James Anderson
+                    </cite>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-v2 light">
+                    <img src="../../assets/images/person_3.jpg" alt="Image" class="img-fluid">
+                    <blockquote>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
+                    <cite>
+                        James Anderson
+                    </cite>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function Message() {
+        //debugger;
+        var firstname = $('#fname').val();
+        var lastname = $('#lname').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+        if (firstname == '') {
+            alert('Enter Full Name');
+        }
+        else if (lastname == '') {
+            alert('Enter Last Name');
+        }
+        else if (email == '') {
+            alert('Enter Email Address');
+        }
+        else if (message == '') {
+            alert('Say us hello');
+        }
+        else {
+            $.get('/ContactUs/ReshapeContactDetails', { FirstName: firstname, LastName: lastname, Email: email, Messages: message}, function (data) {
+            });
+        }
+    }
+</script>

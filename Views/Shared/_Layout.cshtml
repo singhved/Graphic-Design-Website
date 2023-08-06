@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../../assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../../assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../../assets/css/aos.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>Reshape Free HTML Template by Colorlib</title>
+    @*<script nonce="eae4a549-f860-4aaf-996b-0e80dbf87b38">(function (w, d) { !function (bv, bw, bx, by) { bv[bx] = bv[bx] || {}; bv[bx].executed = []; bv.zaraz = { deferred: [], listeners: [] }; bv.zaraz.q = []; bv.zaraz._f = function (bz) { return function () { var bA = Array.prototype.slice.call(arguments); bv.zaraz.q.push({ m: bz, a: bA }) } }; for (const bB of ["track", "set", "debug"]) bv.zaraz[bB] = bv.zaraz._f(bB); bv.zaraz.init = () => { var bC = bw.getElementsByTagName(by)[0], bD = bw.createElement(by), bE = bw.getElementsByTagName("title")[0]; bE && (bv[bx].t = bw.getElementsByTagName("title")[0].text); bv[bx].x = Math.random(); bv[bx].w = bv.screen.width; bv[bx].h = bv.screen.height; bv[bx].j = bv.innerHeight; bv[bx].e = bv.innerWidth; bv[bx].l = bv.location.href; bv[bx].r = bw.referrer; bv[bx].k = bv.screen.colorDepth; bv[bx].n = bw.characterSet; bv[bx].o = (new Date).getTimezoneOffset(); if (bv.dataLayer) for (const bI of Object.entries(Object.entries(dataLayer).reduce(((bJ, bK) => ({ ...bJ[1], ...bK[1] }))))) zaraz.set(bI[0], bI[1], { scope: "page" }); bv[bx].q = []; for (; bv.zaraz.q.length;) { const bL = bv.zaraz.q.shift(); bv[bx].q.push(bL) } bD.defer = !0; for (const bM of [localStorage, sessionStorage]) Object.keys(bM || {}).filter((bO => bO.startsWith("_zaraz_"))).forEach((bN => { try { bv[bx]["z_" + bN.slice(7)] = JSON.parse(bM.getItem(bN)) } catch { bv[bx]["z_" + bN.slice(7)] = bM.getItem(bN) } })); bD.referrerPolicy = "origin"; bD.src = "../../cdn-cgi/zaraz/sd0d9.js?z=" + btoa(encodeURIComponent(JSON.stringify(bv[bx]))); bC.parentNode.insertBefore(bD, bC) };["complete", "interactive"].includes(bw.readyState) ? zaraz.init() : bv.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>*@
+</head>
+<body>
+    <div class="lines-wrap">
+        <div class="lines-inner">
+            <div class="lines"></div>
+        </div>
+    </div>
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <nav class="site-nav dark mb-5">
+        <div class="container">
+            <div class="site-navigation">
+                <a href="@Url.Action("Index","Home")" class="logo m-0">Re<strong>shape</strong> <span class="text-primary">.</span></a>
+                <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-right">
+                    <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="has-children">
+                        <a href="/AboutUs/Index">About us</a>
+                        <ul class="dropdown">
+                            <li><a href="@Url.Action("Index","AboutUs")">Elements</a></li>
+                            <li class="has-children">
+                                <a href="#">Menu Two</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Sub Menu One</a></li>
+                                    <li><a href="#">Sub Menu Two</a></li>
+                                    <li><a href="#">Sub Menu Three</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu Three</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Ourservices/Index">Our services</a></li>
+                    <li><a href="/howwework/Index">How we work?</a></li>
+                    <li><a href="/Portfolio/Index">Portfolio</a></li>
+                    <li><a href="/ContactUs/Index">Contact us</a></li>
+                </ul>
+                <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    //ye sbhi part header ka hhai
+    @RenderBody()
+    //ye sbhi part footer ka hai
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h3>Home</h3>
+                        <ul class="list-unstyled float-left links">
+                            <li><a href="#">Colorlib</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Practice Area</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Attorneys</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h3>Practice Area</h3>
+                        <ul class="list-unstyled float-left links">
+                            <li><a href="#">Architect</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Colorlib</a></li>
+                            <li><a href="#">Free Templates</a></li>
+                            <li><a href="#">WordPress Themes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h3>Services</h3>
+                        <ul class="list-unstyled float-left links">
+                            <li><a href="#">Colorlib</a></li>
+                            <li><a href="#">House Renovation</a></li>
+                            <li><a href="#">Interior Design</a></li>
+                            <li><a href="#">Installation Works</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                        <ul class="list-unstyled links mb-4">
+                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                            @*<li><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection#4920272f260924302d2624282027672a2624"><span class="__cf_email__" data-cfemail="ed84838b82ad80948982808c8483c38e8280">[email&#160;protected]</span></a></li>*@
+                        </ul>
+                        <h3>Connect</h3>
+                        <ul class="list-unstyled social">
+                            <li><a href="/Home/Index"><span class="icon-instagram"></span></a></li>
+                            <li><a href="/Home/Index"><span class="icon-twitter"></span></a></li>
+                            <li><a href="/Home/Index"><span class="icon-facebook"></span></a></li>
+                            <li><a href="/Home/Index"><span class="icon-linkedin"></span></a></li>
+                            <li><a href="/Home/Index"><span class="icon-pinterest"></span></a></li>
+                            <li><a href="/Home/Index"><span class="icon-dribbble"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p>
+
+                        Copyright &copy;
+                        @*<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>*@
+                        @*<script>document.write(new Date().getFullYear());</script>*@ All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/js/popper.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
+    <script src="../../assets/js/jquery.animateNumber.min.js"></script>
+    <script src="../../assets/js/jquery.waypoints.min.js"></script>
+    <script src="../../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../../assets/js/aos.js"></script>
+    <script src="../../assets/js/imagesloaded.pkgd.js"></script>
+    <script src="../../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    @*<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+        </script>*@
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7abccd789bae8504","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
+
+    @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>*@
+</body>
+</html>
+
+
+
+
+
+
+
